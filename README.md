@@ -1,1 +1,3 @@
-# sensor-project
+# Development of a High Performance Passive RFID Sensor Tag
+
+The UHF reader emits RF energy through a modulated carrier wave signal to interrogate a UHF SL900A tag. This tag receives a portion of the energy and converts it into electrical power. An energy-harvesting module then collects and boosts this electrical energy, activating a regulator that supplies power to an MCU and its associated sensors. When the MCU is powered on, it samples the sensor signals using I²C and ADC communication protocols and stores the gathered data in the user memory of the SL900A chip via the SPI communication protocol. As a result, this sensor data can later be accessed by any standard UHF RFID C1 Gen 2 reader. The main challenge was ensuring that the MCU could perform all these tasks with the limited amount of available energy.
